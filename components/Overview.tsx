@@ -15,7 +15,7 @@ export const Overview: React.FC = () => {
               </h2>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-              At Apex, we don’t just build structures; we execute strategic commercial visions. With over 20 years of experience in the Australian construction market, our team provides seamless end-to-end delivery from advisory to final handover.
+              At Sustainabylt, we don’t just build structures; we execute strategic commercial visions. With over 20 years of experience in the Australian construction market, our team provides seamless end-to-end delivery from advisory to final handover.
             </p>
             <div className="grid grid-cols-2 gap-8 py-6">
               <div>

@@ -1,15 +1,19 @@
 
 import React from 'react';
 
+const LOGO_URL = "https://static.wixstatic.com/media/02cd8a_02cf9514545a4589acb426a2588d643a~mv2.png/v1/fill/w_274,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sustainabylt-green%20-%20transparent.png";
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-construction-dark text-white pt-24 pb-12 border-t border-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
-            <span className="text-3xl font-extrabold tracking-tighter font-heading">
-              APEX<span className="text-construction-green">.</span>
-            </span>
+            <img 
+              src={LOGO_URL} 
+              alt="Sustainabylt Logo" 
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="text-gray-500 text-sm leading-relaxed">
               Premium commercial builders delivering stability, competence, and exceptional architectural outcomes across Australia.
             </p>
@@ -38,15 +42,15 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-sm font-black uppercase tracking-widest mb-8 border-l-2 border-construction-green pl-4">Contact</h4>
             <ul className="space-y-4 text-sm text-gray-500">
-              <li>1300 APEX BUILD</li>
-              <li>hello@apexcommercial.com</li>
+              <li>1300 SUSTAINABYLT</li>
+              <li>hello@sustainabylt.com</li>
               <li>Melbourne, Australia</li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 space-y-4 md:space-y-0 uppercase tracking-widest">
-          <p>© {new Date().getFullYear()} Apex Commercial Construction. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Sustainabylt Commercial Construction. All Rights Reserved.</p>
           <div className="flex space-x-8">
             <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
             <a href="#" className="hover:text-white transition-colors">Instagram</a>

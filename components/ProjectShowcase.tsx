@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Tech Plaza",
     category: "Infrastructure",
-    img: "https://images.unsplash.com/photo-1449156001931-8283327c5914?auto=format&fit=crop&q=80&w=800"
+    img: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "Metro Hub",
@@ -45,7 +45,7 @@ export const ProjectShowcase: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((p, idx) => (
-            <div key={idx} className="group relative overflow-hidden bg-gray-100 aspect-square">
+            <div key={idx} className="group relative overflow-hidden bg-gray-100 aspect-square shadow-lg">
               <img 
                 src={p.img} 
                 alt={p.title} 

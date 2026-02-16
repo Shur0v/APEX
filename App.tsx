@@ -22,6 +22,8 @@ import { Process } from './components/Process';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
+const LOGO_URL = "https://static.wixstatic.com/media/02cd8a_02cf9514545a4589acb426a2588d643a~mv2.png/v1/fill/w_274,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sustainabylt-green%20-%20transparent.png";
+
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -42,11 +44,13 @@ const App: React.FC = () => {
       }`}>
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <div className="flex items-center">
-            <span className={`text-2xl font-extrabold tracking-tighter font-heading ${
-              scrolled ? 'text-construction-charcoal' : 'text-white'
-            }`}>
-              APEX<span className="text-construction-green">.</span>
-            </span>
+            <a href="#" className="block transition-all duration-300">
+              <img 
+                src={LOGO_URL} 
+                alt="Sustainabylt Logo" 
+                className={`h-10 md:h-12 w-auto transition-all duration-300 ${!scrolled ? 'brightness-0 invert' : ''}`}
+              />
+            </a>
           </div>
 
           {/* Desktop Nav */}
@@ -86,6 +90,11 @@ const App: React.FC = () => {
         {/* Mobile Nav Overlay */}
         {isMenuOpen && (
           <div className="absolute top-0 left-0 w-full h-screen bg-construction-dark text-white flex flex-col justify-center items-center space-y-8 z-40 md:hidden animate-in fade-in duration-300">
+             <img 
+              src={LOGO_URL} 
+              alt="Sustainabylt Logo" 
+              className="h-16 w-auto mb-8 brightness-0 invert"
+            />
             {['Services', 'Projects', 'Experience', 'Contact'].map((item) => (
               <a 
                 key={item} 
